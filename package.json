@@ -1,11 +1,8 @@
 {
-  "name": "react",
+  "name": "covidtracker",
   "version": "1.0.0",
-  "description": "React example starter project",
-  "keywords": [
-    "react",
-    "starter"
-  ],
+  "description": "A website that tracks our country covid 19  cases. ",
+  "keywords": [],
   "main": "src/index.js",
   "dependencies": {
     "@babel/runtime": "7.14.0",
