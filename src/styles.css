@@ -62,3 +62,6 @@
   font-weight: 600;
   font-size: 13px;
 }
+.card:hover {
+  transform: scale(1.05);
+}

@@ -7,7 +7,7 @@ const Covidtraker = () => {
       const response = await fetch("https://api.covid19india.org/data.json");
       const mainData = await response.json();
       setData(mainData.statewise[0]);
-      // console.log(data);
+      //  console.log(data);
     } catch (err) {
       console.log(err);
     }
@@ -31,6 +31,11 @@ const Covidtraker = () => {
           <div className="card confirmed">
             <h3>Total Confirmed</h3>
             <p>{data.confirmed}</p>
+          </div>
+
+          <div className="card recovery">
+            <h3>Total Recovery</h3>
+            <p>{data.recovered}</p>
           </div>
           <div className="card dathes">
             <h3>Total Deaths</h3>
