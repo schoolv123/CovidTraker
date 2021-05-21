@@ -7,7 +7,7 @@ const Covidtraker = () => {
       const response = await fetch("https://api.covid19india.org/data.json");
       const mainData = await response.json();
       setData(mainData.statewise[0]);
-      //  console.log(data);
+      console.log(mainData);
     } catch (err) {
       console.log(err);
     }
