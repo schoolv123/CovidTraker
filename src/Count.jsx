@@ -7,7 +7,7 @@ const Count = () => {
   return (
     <>
       <div className="container">
-        <h1> I am redy for react </h1>
+        <h1> I am ready for react </h1>
         <p> I will count the number {num} </p>
         <button className="clicker" onClick={clicker}>
           Increment
