@@ -9,8 +9,8 @@ const RouterExample = () => {
     <>
       <Router>
         <div>
-          <nav class="navbar navbar-expand-lg navbar-dark menu-bg">
-            <div class="container-fluid">
+          <nav className="navbar navbar-expand-lg navbar-dark menu-bg">
+            <div className="container-fluid">
               <div className="logo">Cod</div>
               <button
                 className="navbar-toggler"
