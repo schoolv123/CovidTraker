@@ -17,39 +17,44 @@ const State = () => {
   }, []);
 
   return (
-    <>
+    <div className="container-fluid">
       <div className="main">
-        <h2> Live Covid 19 Case Count statewise </h2>
-        <div className="list-container">
-          <List
-            className="list-header"
-            state="State"
-            active="Active"
-            confirmed="Confirmed"
-            recovered="Recovered"
-            deaths="Deaths"
-            lastupdatedtime="Updated"
-          />
-
-          {data.map((val, index) => {
-            if (index !== 31)
-              return (
-                <List
-                  key={index}
-                  dId={index}
-                  className="data-list"
-                  state={val.state}
-                  active={val.active}
-                  confirmed={val.confirmed}
-                  recovered={val.recovered}
-                  deaths={val.deaths}
-                  lastupdatedtime={val.lastupdatedtime}
-                />
-              );
-          })}
+        <h2> INDIA Live Covid 19 Case Count </h2>
+        <div className="table-responsive">
+          <table className="table table-hover">
+            <thead>
+              <tr className="table-dark">
+                <th>State</th>
+                <th>Active</th>
+                <th>Confirmed</th>
+                <th>Recovered</th>
+                <th>Deaths</th>
+                <th>Updated</th>
+                <th>Details</th>
+              </tr>
+            </thead>
+            <tbody>
+              {data.map((val, index) => {
+                if (index !== 31)
+                  return (
+                    <tr key={index}>
+                      <th>{val.state}</th>
+                      <td>{val.active}</td>
+                      <td>{val.confirmed}</td>
+                      <td>{val.recovered}</td>
+                      <td>{val.deaths}</td>
+                      <td>{val.lastupdatedtime}</td>
+                      <td>
+                        <button type="button"> More </button>
+                      </td>
+                    </tr>
+                  );
+              })}
+            </tbody>
+          </table>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
