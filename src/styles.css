@@ -35,7 +35,7 @@
 .main {
   margin: 10px auto;
   width: 90%;
-  border: 1px solid #cbcbcb;
+  /*border: 1px solid #cbcbcb;*/
   padding: 10px;
 }
 .main .content-wrapper {
@@ -71,4 +71,30 @@
 }
 .card:hover {
   transform: scale(1.05);
+}
+
+/* data list style */
+.list-container {
+  width: 670px;
+}
+.list-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 15px;
+  margin-top: 50px;
+}
+.data-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+}
+.data-list div,
+.list-header div {
+  width: 95px;
+  text-align: center;
+  padding: 0px 2px;
+  margin: 0;
 }

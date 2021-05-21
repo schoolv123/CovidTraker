@@ -53,7 +53,6 @@ const Covidtraker = () => {
           </div>
           <div className="card time">
             <h3>
-              {" "}
               <span>Last</span> Updated Time
             </h3>
             <p>{data.lastupdatedtime}</p>
