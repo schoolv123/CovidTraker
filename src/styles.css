@@ -8,6 +8,31 @@
   font-family: sans-serif;
   text-align: center;
 }
+.menu-bg {
+  background: #6200ee;
+  color: #fff;
+}
+.menu-bg .logo {
+  color: #fff;
+  font-size: 17px;
+  font-weight: bold;
+}
+.menu-bar .menu {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.menu-bar .menu li {
+  padding: 5px;
+  margin: 0px 3px;
+  list-style: none;
+}
+.menu-bar .menu li a {
+  font-size: 13px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+}
 .container {
   margin: 0px 50px;
   text-align: center;

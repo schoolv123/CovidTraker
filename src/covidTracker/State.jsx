@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import List from "./List";
+//import List from "./List";
 const State = () => {
   const [data, setData] = useState([]);
   const getCoviddata = async () => {
@@ -45,7 +45,12 @@ const State = () => {
                       <td>{val.deaths}</td>
                       <td>{val.lastupdatedtime}</td>
                       <td>
-                        <button type="button"> More </button>
+                        <button
+                          type="button"
+                          className="btn btn-primary btn-sm"
+                        >
+                          More
+                        </button>
                       </td>
                     </tr>
                   );
